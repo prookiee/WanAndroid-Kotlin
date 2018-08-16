@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="6dp"
+    app:cardCornerRadius="4dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_article_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_portrait_name"
+            app:layout_constraintHorizontal_bias="0.003"
+            app:layout_constraintLeft_toRightOf="@+id/iv_article_author_portrait"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline_portrait_name"
+            app:layout_constraintVertical_bias="0.916"
+            tools:text="author" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_article_author_portrait"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@color/app_main_theme"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_portrait_name"
+            app:layout_constraintHorizontal_bias="0.025"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline_portrait_name"
+            app:layout_constraintVertical_bias="0.789" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_portrait_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="28dp" />
+
+        <TextView
+            android:id="@+id/tv_article_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="51dp"
+            android:paddingLeft="2dp"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="this is article title" />
+
+        <TextView
+            android:id="@+id/tv_article_classify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/app_main_theme"
+            app:layout_constraintHorizontal_bias="0.027"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_article_title"
+            tools:text="自定义View" />
+
+        <TextView
+            android:id="@+id/tv_article_publish_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="0dp"
+            android:gravity="right"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_portrait_name"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline_portrait_name"
+            app:layout_constraintVertical_bias="0.823"
+            tools:text="2小时前" />
+
+        <ImageView
+            android:id="@+id/iv_article_like"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.941"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.96"
+            app:srcCompat="@drawable/like_lightgray" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="297dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

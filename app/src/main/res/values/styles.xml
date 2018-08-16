@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/app_main_theme</item>
+        <item name="colorPrimaryDark">@color/state_bar</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Toolbar" parent="AppTheme">
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="searchHintIcon">@null</item>
+    </style>
+
+
+    <style name="ToolbarTheme" parent="Theme.AppCompat.Light">
+        <!-- 设置 toolbar 溢出菜单的文字的颜色 -->
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="colorButtonNormal">@android:color/white</item>
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+</resources>

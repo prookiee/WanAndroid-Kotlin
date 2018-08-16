@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_hot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_hot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@color/white"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:text="@string/my_book_marks" />-->
+
+    <!--<com.zhy.view.flowlayout.TagFlowLayout-->
+    <!--android:id="@+id/"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.prookie.kotlinmvp.biz.NavigationDrawerActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="3dp"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <org.cryse.widget.persistentsearch.PersistentSearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+        android:elevation="4dp"
+        app:layout_behavior="@string/app_bar_header_behavior"
+        app:persistentSV_customToolbarHeight="?attr/actionBarSize"
+        app:persistentSV_displayMode="toolbar"
+        app:persistentSV_editHintText="Search"
+        app:persistentSV_editHintTextColor="?android:textColorHint"
+        app:persistentSV_editTextColor="?android:textColorPrimary"
+        app:persistentSV_homeButtonMode="burger"
+        app:persistentSV_searchCardElevation="2dp"
+        app:persistentSV_searchTextColor="?android:textColorPrimary" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <View
+        android:id="@+id/search_tint_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.0"
+        android:background="#88000000"
+        android:elevation="2dp"
+        android:layerType="hardware"
+        android:visibility="visible" />
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.prookie.kotlinmvp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".application.MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".biz.ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".biz.NavigationView"
+            android:label="@string/title_activity_navigation_view" />
+        <!-- <activity -->
+        <!-- android:name=".module.NavigationDrawerActivity" -->
+        <!-- android:label="@string/title_activity_navigation_drawer" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar"></activity> -->
+        <activity android:name=".biz.ui.LoginActivity" />
+        <activity android:name=".biz.ui.ArticleContentActivity" />
+        <activity android:name=".biz.ui.CategoryListActivity" />
+        <activity android:name=".biz.ui.CategoryArticleActivity" />
+        <activity android:name=".biz.ui.SearchResultActivity"/>
+    </application>
+
+</manifest>
